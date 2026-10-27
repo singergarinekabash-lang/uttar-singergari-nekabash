@@ -56,6 +56,758 @@
     <p>🎨 সাংস্কৃতিক অনুষ্ঠান</p>
     <p>⚽ খেলাধুলা ও সহশিক্ষা কার্যক্রম</p>
 </div>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>উত্তর সিঙ্গেরগাড়ী নেকাবাঁশ সরকারি প্রাথমিক বিদ্যালয়</title>
+
+<meta name="description" content="উত্তর সিঙ্গেরগাড়ী নেকাবাঁশ সরকারি প্রাথমিক বিদ্যালয়ের পরিচিতি, শিক্ষক, শিক্ষার্থী, নোটিশ ও শিক্ষা কার্যক্রম।">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Bengali", "Hind Siliguri",
+                 "SolaimanLipi", sans-serif;
+    background: #f4f8f6;
+    color: #24352f;
+    line-height: 1.8;
+}
+
+:root {
+    --green: #087f5b;
+    --dark-green: #075c45;
+    --light-green: #e3f5ec;
+    --gold: #ffc857;
+    --white: #ffffff;
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* উপরের বার */
+
+.topbar {
+    background: var(--dark-green);
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* বিদ্যালয়ের পরিচিতি */
+
+.school-header {
+    background: white;
+    padding: 22px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: var(--light-green);
+    border: 3px solid var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    flex-shrink: 0;
+}
+
+.school-header h1 {
+    color: var(--dark-green);
+    font-size: clamp(22px, 4vw, 35px);
+    line-height: 1.5;
+}
+
+.school-header p {
+    color: #65766e;
+    font-size: 14px;
+}
+
+/* মেনু */
+
+nav {
+    background: var(--green);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 13px 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: var(--gold);
+    color: #26372f;
+}
+
+/* প্রচ্ছদ */
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 65px 20px;
+    background:
+        linear-gradient(135deg, #064e3bcc, #087f5bcc),
+        url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 780px;
+    animation: appear 1s ease;
+}
+
+.hero h2 {
+    font-size: clamp(28px, 5vw, 46px);
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #26372f;
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: white;
+}
+
+/* সাধারণ সেকশন */
+
+section {
+    padding: 65px 0;
+    scroll-margin-top: 65px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--dark-green);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #6a7972;
+    margin-bottom: 35px;
+}
+
+/* তথ্য কার্ড */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px #123c2b0c;
+    border-bottom: 4px solid var(--green);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px #123c2b18;
+}
+
+.card .icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+/* পরিচিতি */
+
+.about {
+    background: var(--light-green);
+}
+
+.about-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.about-image {
+    width: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    background: #d1e8da;
+    box-shadow: 0 8px 25px #00000012;
+}
+
+.about-text h3 {
+    color: var(--dark-green);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 12px;
+}
+
+/* প্রধান শিক্ষক */
+
+.headteacher-card {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 8px 28px #0000000d;
+}
+
+.teacher-photo {
+    width: 180px;
+    height: 210px;
+    border-radius: 15px;
+    object-fit: cover;
+    background: var(--light-green);
+    flex-shrink: 0;
+}
+
+.headteacher-card h3 {
+    color: var(--dark-green);
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+/* গ্যালারি */
+
+.gallery {
+    background: #edf5f0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #0000000c;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-green);
+}
+
+/* নোটিশ */
+
+.notice-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px #0000000c;
+}
+
+.notice {
+    padding: 15px 5px;
+    border-bottom: 1px solid #e5eee8;
+}
+
+.notice:last-child {
+    border-bottom: none;
+}
+
+.notice strong {
+    color: var(--green);
+}
+
+/* যোগাযোগ */
+
+.contact {
+    background: var(--light-green);
+}
+
+.contact-card {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.contact-card p {
+    margin: 12px 0;
+}
+
+/* ফুটার */
+
+footer {
+    background: #063f30;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* মোবাইল ডিজাইন */
+
+@media (max-width: 650px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    .nav-links a {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .about-box {
+        grid-template-columns: 1fr;
+    }
+
+    .headteacher-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 22px;
+    }
+
+    .teacher-photo {
+        width: 160px;
+        height: 180px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    📚 জ্ঞান, শৃঙ্খলা ও মানবিকতার আলোয় গড়ি আগামীর বাংলাদেশ
+</div>
+
+<header class="school-header">
+    <div class="container header-content">
+        <div class="logo">🏫</div>
+
+        <div>
+            <h1>উত্তর সিঙ্গেরগাড়ী নেকাবাঁশ<br>
+            সরকারি প্রাথমিক বিদ্যালয়</h1>
+
+            <p>UTTAR SINGERGARI NEKABASH GOVERNMENT PRIMARY SCHOOL</p>
+            <p>নীলফামারী, বাংলাদেশ</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#about">বিদ্যালয় পরিচিতি</a></li>
+        <li><a href="#headteacher">প্রধান শিক্ষক</a></li>
+        <li><a href="#gallery">ছবির গ্যালারি</a></li>
+        <li><a href="#notice">নোটিশ</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+    </ul>
+</nav>
+
+<!-- প্রচ্ছদ -->
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h2>স্বাগতম আমাদের প্রিয় বিদ্যালয়ে</h2>
+
+        <p>
+            প্রতিটি শিশুর জন্য মানসম্মত শিক্ষা,
+            সুন্দর ভবিষ্যৎ এবং আলোকিত জীবন গড়ার
+            প্রত্যয়ে আমাদের পথচলা।
+        </p>
+
+        <a href="#about" class="btn">আমাদের সম্পর্কে জানুন →</a>
+    </div>
+</section>
+
+<!-- সংক্ষিপ্ত তথ্য -->
+
+<section>
+    <div class="container">
+        <h2 class="section-title">আমাদের বিদ্যালয়</h2>
+
+        <p class="section-subtitle">
+            শিক্ষা, নৈতিকতা ও সৃজনশীলতার একটি সুন্দর পরিবেশ
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📖</div>
+                <h3>মানসম্মত শিক্ষা</h3>
+                <p>শিক্ষার্থীদের উপযোগী আনন্দময় পাঠদান ও শিখন কার্যক্রম।</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👩‍🏫</div>
+                <h3>দক্ষ শিক্ষক</h3>
+                <p>শিক্ষার্থীদের জ্ঞান, দক্ষতা ও নৈতিকতা বিকাশে আন্তরিক প্রচেষ্টা।</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>সুন্দর ভবিষ্যৎ</h3>
+                <p>সৃজনশীলতা, মানবিক মূল্যবোধ ও আত্মবিশ্বাস বিকাশে গুরুত্ব।</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- বিদ্যালয় পরিচিতি -->
+
+<section class="about" id="about">
+    <div class="container">
+
+        <h2 class="section-title">বিদ্যালয় পরিচিতি</h2>
+
+        <p class="section-subtitle">
+            আমাদের বিদ্যালয়, আমাদের গর্ব
+        </p>
+
+        <div class="about-box">
+
+            <img
+                class="about-image"
+                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=85"
+                alt="বিদ্যালয়ের ভবনের নমুনা ছবি"
+                loading="lazy"
+            >
+
+            <div class="about-text">
+                <h3>আলোকিত মানুষ গড়ার প্রত্যয়ে</h3>
+
+                <p>
+                    উত্তর সিঙ্গেরগাড়ী নেকাবাঁশ সরকারি প্রাথমিক
+                    বিদ্যালয় একটি প্রাথমিক শিক্ষাপ্রতিষ্ঠান।
+                    শিশুদের আনন্দময় শিক্ষার পরিবেশ সৃষ্টি,
+                    জ্ঞান অর্জন এবং নৈতিক মূল্যবোধ বিকাশে
+                    বিদ্যালয়ের ভূমিকা গুরুত্বপূর্ণ।
+                </p>
+
+                <p>
+                    আমাদের লক্ষ্য—প্রতিটি শিক্ষার্থীকে
+                    জ্ঞানী, দক্ষ, সৃজনশীল ও মানবিক মানুষ
+                    হিসেবে গড়ে তোলা।
+                </p>
+
+                <p>
+                    <strong>ঠিকানা:</strong>
+                    নীলফামারী, বাংলাদেশ।
+                </p>
+
+                <p>
+                    <em>বিদ্যালয়ের সঠিক ইতিহাস, প্রতিষ্ঠাকাল
+                    ও ঠিকানা পরে যুক্ত করুন।</em>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- প্রধান শিক্ষক -->
+
+<section id="headteacher">
+    <div class="container">
+
+        <h2 class="section-title">আমাদের প্রধান শিক্ষক</h2>
+
+        <p class="section-subtitle">
+            বিদ্যালয়ের নেতৃত্বে আন্তরিকতা ও দায়িত্বশীলতা
+        </p>
+
+        <div class="headteacher-card">
+
+            <img
+                class="teacher-photo"
+                src="https://placehold.co/400x500/e3f5ec/075c45?text=Headteacher+Photo"
+                alt="প্রধান শিক্ষকের ছবি"
+                loading="lazy"
+            >
+
+            <div>
+                <h3>প্রধান শিক্ষকের নাম</h3>
+
+                <p><strong>পদবি:</strong> প্রধান শিক্ষক</p>
+
+                <p>
+                    শিক্ষার্থীদের মানসম্মত শিক্ষা নিশ্চিত করা,
+                    শিক্ষকদের সহযোগিতা করা এবং বিদ্যালয়ের
+                    সার্বিক উন্নয়নে কাজ করাই আমাদের লক্ষ্য।
+                </p>
+
+                <p>
+                    <em>এখানে প্রধান শিক্ষকের প্রকৃত নাম,
+                    ছবি ও সংক্ষিপ্ত পরিচিতি যুক্ত করুন।</em>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ছবির গ্যালারি -->
+
+<section class="gallery" id="gallery">
+    <div class="container">
+
+        <h2 class="section-title">আমাদের ছবির গ্যালারি</h2>
+
+        <p class="section-subtitle">
+            বিদ্যালয়ের সুন্দর মুহূর্ত ও কার্যক্রম
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=700&q=80"
+                    alt="বিদ্যালয় ভবনের নমুনা ছবি"
+                    loading="lazy"
+                >
+                <p>বিদ্যালয় ভবন</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80"
+                    alt="শ্রেণিকক্ষের নমুনা ছবি"
+                    loading="lazy"
+                >
+                <p>শিক্ষা কার্যক্রম</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80"
+                    alt="শিক্ষার্থীদের শিক্ষার নমুনা ছবি"
+                    loading="lazy"
+                >
+                <p>শিক্ষার্থীদের কার্যক্রম</p>
+            </div>
+
+        </div>
+
+        <p style="text-align:center; margin-top:22px;">
+            <em>এগুলো নমুনা ছবি। বিদ্যালয়ের নিজস্ব ছবি দিয়ে
+            প্রতিস্থাপন করুন।</em>
+        </p>
+
+    </div>
+</section>
+
+<!-- নোটিশ বোর্ড -->
+
+<section id="notice">
+    <div class="container">
+
+        <h2 class="section-title">নোটিশ বোর্ড</h2>
+
+        <p class="section-subtitle">
+            বিদ্যালয়ের গুরুত্বপূর্ণ ঘোষণা
+        </p>
+
+        <div class="notice-box">
+
+            <div class="notice">
+                <strong>📢 গুরুত্বপূর্ণ ঘোষণা</strong>
+                <p>বিদ্যালয়ের নতুন নোটিশ এখানে প্রকাশ করুন।</p>
+            </div>
+
+            <div class="notice">
+                <strong>📅 পরীক্ষাসংক্রান্ত বিজ্ঞপ্তি</strong>
+                <p>পরীক্ষার তারিখ ও সময় এখানে লিখুন।</p>
+            </div>
+
+            <div class="notice">
+                <strong>🎓 অভিভাবক সভা</strong>
+                <p>সভা বা অন্যান্য কার্যক্রমের তথ্য এখানে যুক্ত করুন।</p>
+            </div>
+
+            <p style="margin-top:15px; font-size:14px;">
+                * নমুনা নোটিশগুলো পরিবর্তন করে প্রকৃত তথ্য দিন।
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- যোগাযোগ -->
+
+<section class="contact" id="contact">
+    <div class="container">
+
+        <h2 class="section-title">যোগাযোগ</h2>
+
+        <p class="section-subtitle">
+            আমাদের বিদ্যালয় সম্পর্কে জানতে যোগাযোগ করুন
+        </p>
+
+        <div class="contact-card">
+
+            <h3>🏫 উত্তর সিঙ্গেরগাড়ী নেকাবাঁশ সরকারি প্রাথমিক বিদ্যালয়</h3>
+
+            <p>📍 ঠিকানা: নীলফামারী, বাংলাদেশ</p>
+
+            <p>📞 ফোন: বিদ্যালয়ের প্রকৃত নম্বর যুক্ত করুন</p>
+
+            <p>✉️ ইমেইল: বিদ্যালয়ের ইমেইল যুক্ত করুন</p>
+
+            <p>
+                <em>প্রকাশের আগে সঠিক ঠিকানা,
+                ফোন নম্বর ও ইমেইল দিয়ে পরিবর্তন করুন।</em>
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © <span id="year"></span>
+        উত্তর সিঙ্গেরগাড়ী নেকাবাঁশ সরকারি প্রাথমিক বিদ্যালয়
+    </p>
+
+    <p>শিক্ষাই জাতির মেরুদণ্ড | প্রতিটি শিশুর জন্য মানসম্মত শিক্ষা</p>
+
+    <p>ওয়েবসাইটটি বিদ্যালয়ের তথ্য দিয়ে হালনাগাদ করুন।</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
 
 <footer>
     <p>উত্তর সিঙ্গেরগাড়ী নেকাবাঁশ সরকারি প্রাথমিক বিদ্যালয়</p>
